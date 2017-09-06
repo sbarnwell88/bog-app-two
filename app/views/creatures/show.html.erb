@@ -1,2 +1,6 @@
 <h1><%= @creature.name %> </h1>
 <p><%= @creature.description %> </p>
+
+<%= form_for @creature, method: :delete do |f| %>
+    <%= f.submit "Delete", class: "delete" %>
+<% end %>
